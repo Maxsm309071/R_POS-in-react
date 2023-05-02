@@ -1,0 +1,49 @@
+.container{
+    height: 81.5vh;
+    padding-top: 5rem;
+    box-sizing: border-box;
+    width: 100vw;
+
+}
+.home{
+    width: 100vw;
+}
+
+.vector{
+    filter: drop-shadow(20px 15px 10px rgba(255, 255, 255, 0.3));
+}
+
+.brandsBanner > svg {
+    color: white;
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+
+.brandsBanner > svg:hover{
+    color: orange 
+}
+
+
+.category{
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.category:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+.product{
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.product:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 166, 0, 0.5);
+}
