@@ -59,7 +59,7 @@ const Products = ({
         <Link to={`/product/${id}`}>
           <Button display={"flex"} justifyContent={'center'}
             variant={'ghost'}
-            colorScheme={'orange'}
+            colorScheme={'orange.400'}
             onClick={() => addToCartHandler(id)}
           >
             Add to Cart
@@ -84,7 +84,7 @@ const Product = () => {
   ];
 
   return (
-    <Container minH={'95vh'} maxH="container.lg" paddingY={'8'}>
+    <Container h={'90vh'} maxH="container.lg" paddingY={'8'}>
       <Heading children="Search by Products" m={'8'} />
 
       <Input
@@ -92,7 +92,7 @@ const Product = () => {
         onChange={e => setKeyword(e.target.value)}
         placeholder="Products...."
         type="text"
-        focusBorderColor="orange.500"
+        focusBorderColor="orange.4 00"
       />
       <HStack
         overflowX={'auto'}

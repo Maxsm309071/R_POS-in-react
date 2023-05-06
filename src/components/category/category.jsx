@@ -83,7 +83,7 @@ const Category = () => {
   ];
 
   return (
-    <Container minH={'95vh'} maxH="container.lg" paddingY={'8'}>
+    <Container maxH="container.lg" paddingY={'8'} h={'90vh'}>
       <Heading children="Search by Categories" m={'8'} />
 
       <Input
@@ -91,7 +91,7 @@ const Category = () => {
         onChange={e => setKeyword(e.target.value)}
         placeholder="Categories...."
         type="text"
-        focusBorderColor="orange.500"
+        focusBorderColor="orange.400"
       />
       <HStack
         overflowX={'auto'}

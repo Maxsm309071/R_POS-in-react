@@ -13,7 +13,8 @@ import './home.css';
 import { Link } from 'react-router-dom';
 import vg from '../../assets/images/bg0.png';
 import { CgGoogle, CgYoutube } from "react-icons/cg";
-import { SiSpotify, SiInstagram } from "react-icons/si";
+import { SiSpotify, SiInstagram} from "react-icons/si";
+
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
       <div className="container">
         <Stack
           direction={['column', 'row']}
-          height="100%"
+          height="90%"
           justifyContent={['center', 'space-between']}
           alignItems={'center'}
           spacing={['16', '56']}

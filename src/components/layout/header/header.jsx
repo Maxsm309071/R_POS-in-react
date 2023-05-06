@@ -22,7 +22,7 @@ const LinkButton = ({ url = '/', title = 'HOME' , onClose}) => (
 );
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const user = {
     role:"admin"
   }
@@ -67,7 +67,7 @@ const Header = () => {
                     <VStack>
                       <HStack>
                         <Link onClick={onClose} to="/profile">
-                          <Button variant={'ghost'} colorScheme={'orange'}>
+                          <Button variant={'ghost'} colorScheme={'orange.400'}>
                             Profile
                           </Button>
                         </Link>
@@ -90,11 +90,11 @@ const Header = () => {
                 ) : (
                   <>
                     <Link onClick={onClose} to="/login">
-                      <Button colorScheme={'orange'}>Sign In</Button>
+                      <Button colorScheme={'orange.400'}>Sign In</Button>
                     </Link>
                     <p>or</p>
                     <Link onClick={onClose} to="/register">
-                      <Button colorScheme={'orange'}>Sign Up</Button>
+                      <Button colorScheme={'orange.400'}>Sign Up</Button>
                     </Link>
                   </>
                 )}
